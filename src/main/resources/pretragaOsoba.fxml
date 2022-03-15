@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.PretragaOsobaController">
+    <top>
+        <fx:include fx:id="izbornik" source="izbornik.fxml" />
+    </top>
+    <center>
+        <GridPane prefHeight="354.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="21.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="62.0" prefWidth="190.0" text="Pretraživanje Osoba" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets top="5.0" />
+                    </GridPane.margin>
+                    <opaqueInsets>
+                        <Insets top="25.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label text="Ime" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                    <padding>
+                        <Insets right="20.0" />
+                    </padding>
+                </Label>
+                <TextField fx:id="dioStringaKodImenaOsobe" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#pretragaOsoba" text="Pretraži" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label text="Prezime" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="dioStringaKodPrezimenaOsobe" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            </children>
+        </GridPane>
+    </center>
+    <bottom>
+        <TableView fx:id="ispisOsoba" prefHeight="219.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+            <columns>
+            <TableColumn fx:id="imeOsobeUTablici" prefWidth="89.0" text="Ime" />
+                <TableColumn fx:id="prezimeOsobeUTablici" prefWidth="66.0" text="Prezime" />
+                <TableColumn fx:id="datumRodenjaUTablici" prefWidth="45.0" text="Starost" />
+            <TableColumn fx:id="zupanijaOsobeUTablici" prefWidth="116.0" text="Zupanija" />
+            <TableColumn fx:id="bolestOsobeUTablici" prefWidth="105.0" text="Bolest" />
+            <TableColumn fx:id="kontaktiraneOsobeOsobeUTablici" prefWidth="180.0" text="Kontaktirane Osobe" />
+            </columns>
+        </TableView>
+    </bottom>
+</BorderPane>

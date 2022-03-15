@@ -1,0 +1,24 @@
+1
+HERPES
+1
+3
+PREHLADA
+1,2
+5
+TROVANJE HRANOM
+1,4,5
+7
+DIJABETES
+4,8
+9
+EPILEPSIJA
+2,8
+11
+RAK
+2,8
+13
+dsadsada
+11
+15
+dsadssdasasaas
+13,3

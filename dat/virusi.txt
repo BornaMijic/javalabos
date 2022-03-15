@@ -1,0 +1,30 @@
+2
+COVID-19
+2
+4
+GRIPA
+2,3
+6
+SVINJSKA GRIPA
+1,2,3
+8
+VIROZA
+2,4,5
+10
+HIV
+2,4
+12
+Virusni kašalj
+1,6
+14
+MALARIJA
+4,2
+16
+SAR
+3,4,2
+18
+PTIČJA GRIPA
+2,4,1,5
+20
+sasasaasas
+10,7

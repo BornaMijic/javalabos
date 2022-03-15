@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="0.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.sample.Controller">
+        <MenuBar prefHeight="25.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Županije">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranPretrageZupanija" text="Pretraga" />
+               <MenuItem mnemonicParsing="false" onAction="#dodavanjeZupanija" text="Novi zapis" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Simptomi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranPretrageSimptoma" text="Pretraga" />
+               <MenuItem mnemonicParsing="false" onAction="#dodavanjeSimptom" text="Novi zapis" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Bolesti">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranPretrageBolesti" text="Pretraga" />
+               <MenuItem mnemonicParsing="false" onAction="#dodavanjeBolesti" text="Novi zapis" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#dodavanjeVirusa" text="Virusi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranPretrageVirusa" text="Pretraga" />
+               <MenuItem mnemonicParsing="false" text="Novi zapis" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Osobe">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranPretrageOsoba" text="Pretraga" />
+               <MenuItem mnemonicParsing="false" onAction="#dodavanjeOsoba" text="Novi zapis" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+</AnchorPane>
